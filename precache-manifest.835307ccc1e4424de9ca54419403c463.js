@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f78b8fb1e6eda6b1bab4005a10a9215",
+    "revision": "22e5f452623cb56e0e630a2cdb35e65c",
     "url": "/interactive-cv/index.html"
   },
   {
-    "revision": "c662417bcaf70af2c8eb",
-    "url": "/interactive-cv/static/css/main.5f361e03.chunk.css"
+    "revision": "e9bd76979e45669d2b44",
+    "url": "/interactive-cv/static/css/main.a850e611.chunk.css"
   },
   {
-    "revision": "cff75a8a438be964c37f",
-    "url": "/interactive-cv/static/js/2.c85acd82.chunk.js"
+    "revision": "d81c5953b9bef4d80f9b",
+    "url": "/interactive-cv/static/js/2.19f3e0c8.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/interactive-cv/static/js/2.c85acd82.chunk.js.LICENSE.txt"
+    "url": "/interactive-cv/static/js/2.19f3e0c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c662417bcaf70af2c8eb",
-    "url": "/interactive-cv/static/js/main.6d85b3ce.chunk.js"
+    "revision": "e9bd76979e45669d2b44",
+    "url": "/interactive-cv/static/js/main.56273fde.chunk.js"
   },
   {
     "revision": "bf923ce1f7b1fe245572",
