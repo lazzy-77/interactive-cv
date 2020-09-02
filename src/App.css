@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px;
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 0.25fr 0.5fr 0.25fr 0.5fr 1.5fr;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.25fr;
+	grid-template-areas:
+		'nav pro-des tech-used tech-used tech-learned tech-learned'
+		'user-info pro-des tech-used tech-used tech-learned tech-learned'
+		'user-info project-1 project-2 project-3 tech-learned tech-learned'
+		'education project-viewer project-viewer project-viewer hobby-selector hobby-selector'
+		'education project-viewer project-viewer project-viewer hobby-des contact-details';
+	grid-gap: 0.5rem;
+	text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.smooth-edges {
+	border-radius: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav {
+	background: #f76c6c;
+	grid-area: nav;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#user-info {
+	background: #f76c6c;
+	grid-area: user-info;
 }
 
-.App-link {
-  color: #61dafb;
+#education {
+	background: #f76c6c;
+	grid-area: education;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#pro-des {
+	background: #a8d0e6;
+	grid-area: pro-des;
+}
+
+#tech-used {
+	background: #a8d0e6;
+	grid-area: tech-used;
+}
+
+#tech-learned {
+	background: #24305e;
+	grid-area: tech-learned;
+}
+
+#project-1 {
+	background: #a8d0e6;
+	grid-area: project-1;
+}
+
+#project-2 {
+	background: #a8d0e6;
+	grid-area: project-2;
+}
+
+#project-3 {
+	background: #a8d0e6;
+	grid-area: project-3;
+}
+
+#project-viewer {
+	background: #a8d0e6;
+	grid-area: project-viewer;
+}
+
+#hobby-selector {
+	background: #24305e;
+	grid-area: hobby-selector;
+}
+
+#hobby-des {
+	background: #24305e;
+	grid-area: hobby-des;
+}
+
+#contact-details {
+	background: #24305e;
+	grid-area: contact-details;
+}
+
+@media only screen and (max-width: 550px) {
+	.container {
+	}
 }
