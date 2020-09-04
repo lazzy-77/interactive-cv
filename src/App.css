@@ -19,73 +19,149 @@
 	text-align: center;
 }
 
-.smooth-edges {
-	border-radius: 1rem;
-}
-
 #nav {
 	background: #f76c6c;
 	grid-area: nav;
+	border-radius: 1rem;
 }
 
 #user-info {
 	background: #f76c6c;
 	grid-area: user-info;
+	border-radius: 1rem;
 }
 
 #education {
 	background: #f76c6c;
 	grid-area: education;
+	border-radius: 1rem;
 }
 
 #pro-des {
 	background: #a8d0e6;
 	grid-area: pro-des;
+	border-radius: 1rem;
 }
 
 #tech-used {
 	background: #a8d0e6;
 	grid-area: tech-used;
+	border-radius: 1rem;
 }
 
 #tech-learned {
 	background: #24305e;
 	grid-area: tech-learned;
+	border-radius: 1rem;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.tech-learned-container {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'html-icon html-bar css-icon css-bar'
+		'java-icon java-bar sql-icon sql-bar'
+		'javascript-icon javascript-bar react-icon react-bar';
+}
+
+.html-icon {
+	grid-area: html-icon;
+}
+
+.html-bar {
+	grid-area: html-bar;
+	background: #a8d0e6;
+}
+
+.css-icon {
+	grid-area: css-icon;
+}
+
+.css-bar {
+	grid-area: css-bar;
+	background: #a8d0e6;
+}
+
+.java-icon {
+	grid-area: java-icon;
+}
+
+.java-bar {
+	grid-area: java-bar;
+	background: #a8d0e6;
+}
+
+.sql-icon {
+	grid-area: sql-icon;
+}
+
+.sql-bar {
+	grid-area: sql-bar;
+	background: #a8d0e6;
+}
+
+.javascript-icon {
+	grid-area: javascript-icon;
+}
+
+.javascript-bar {
+	grid-area: javascript-bar;
+	background: #a8d0e6;
+}
+
+.react-icon {
+	grid-area: react-icon;
+}
+
+.react-bar {
+	grid-area: react-bar;
+	background: #a8d0e6;
 }
 
 #project-1 {
 	background: #a8d0e6;
 	grid-area: project-1;
+	border-radius: 1rem;
 }
 
 #project-2 {
 	background: #a8d0e6;
 	grid-area: project-2;
+	border-radius: 1rem;
 }
 
 #project-3 {
 	background: #a8d0e6;
 	grid-area: project-3;
+	border-radius: 1rem;
 }
 
 #project-viewer {
 	background: #a8d0e6;
 	grid-area: project-viewer;
+	border-radius: 1rem;
 }
 
 #hobby-selector {
 	background: #24305e;
 	grid-area: hobby-selector;
+	border-radius: 1rem;
 }
 
 #hobby-des {
 	background: #24305e;
 	grid-area: hobby-des;
+	border-radius: 1rem;
 }
 
 #contact-details {
 	background: #24305e;
 	grid-area: contact-details;
+	border-radius: 1rem;
 }
 
 @media only screen and (max-width: 550px) {
