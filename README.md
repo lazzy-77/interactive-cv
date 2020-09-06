@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://lazzy-77.github.io/interactive-cv/
 
 ## Available Scripts
 
