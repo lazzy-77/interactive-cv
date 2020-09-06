@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { useSpring, animated } from 'react-spring';
 import { Spring } from 'react-spring/renderprops';
+import AnimatedCard from './components/AnimatedCard';
 
 function App() {
 	const iconStyle = [
@@ -48,9 +49,9 @@ function App() {
 		to: { opacity: 1 },
 	});
 
-	console.log(springProps);
 	return (
 		<div className='container'>
+			<AnimatedCard />
 			<div id='nav' className=''>
 				Nav
 			</div>

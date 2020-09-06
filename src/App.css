@@ -17,6 +17,7 @@
 		'education project-viewer project-viewer project-viewer hobby-des contact-details';
 	grid-gap: 0.5rem;
 	text-align: center;
+	overflow: 'hidden';
 }
 
 #nav {
