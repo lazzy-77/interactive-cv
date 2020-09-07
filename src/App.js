@@ -1,109 +1,97 @@
 import React from 'react';
 import './App.css';
-import { useSpring, animated } from 'react-spring';
-import { Spring } from 'react-spring/renderprops';
 import AnimatedCard from './components/AnimatedCard';
 
 function App() {
-	const iconStyle = [
-		{
-			backgroundImage: `url(${require('./images/html-5-icon.svg')})`,
-			backgroundPosition: 'center',
-			backgroundSize: '50%',
-			backgroundRepeat: 'no-repeat',
-		},
-		{
-			backgroundImage: `url(${require('./images/css-icon.svg')})`,
-			backgroundPosition: 'center',
-			backgroundSize: '50%',
-			backgroundRepeat: 'no-repeat',
-		},
-		{
-			backgroundImage: `url(${require('./images/java-icon.svg')})`,
-			backgroundPosition: 'center',
-			backgroundSize: '50%',
-			backgroundRepeat: 'no-repeat',
-		},
-		{
-			backgroundImage: `url(${require('./images/sql-icon.svg')})`,
-			backgroundPosition: 'center',
-			backgroundSize: '50%',
-			backgroundRepeat: 'no-repeat',
-		},
-		{
-			backgroundImage: `url(${require('./images/javascript-icon.svg')})`,
-			backgroundPosition: 'center',
-			backgroundSize: '50%',
-			backgroundRepeat: 'no-repeat',
-		},
-		{
-			backgroundImage: `url(${require('./images/react-icon.svg')})`,
-			backgroundPosition: 'center',
-			backgroundSize: '65%',
-			backgroundRepeat: 'no-repeat',
-		},
-	];
-
-	const springProps = useSpring({
-		from: { opacity: 0 },
-		to: { opacity: 1 },
-	});
-
 	return (
 		<div className='container'>
-			<AnimatedCard />
 			<div id='nav' className=''>
 				Nav
 			</div>
-			<div id='user-info' className=''>
+			<AnimatedCard id='user-info' className=''>
 				User Info
-			</div>
-			<div id='education' className=''>
+			</AnimatedCard>
+			<AnimatedCard id='education' className=''>
 				Education
-			</div>
-			<div id='pro-des' className=''>
+			</AnimatedCard>
+			<AnimatedCard id='pro-des' className=''>
 				Project description
-			</div>
-			<div id='tech-used' className=''>
+			</AnimatedCard>
+			<AnimatedCard id='tech-used' className=''>
 				Technologies used
-			</div>
+			</AnimatedCard>
 			<div id='tech-learned' className=''>
 				<div className='tech-learned-container'>
-					<div className='html-icon' style={iconStyle[0]}></div>
+					<div className='tech-learned-title'>
+						Technologies Learned
+					</div>
+					<div className='html-icon' id='icon'>
+						<img
+							id='icon-img'
+							src={`${require('./images/html-5-icon.svg')}`}
+						/>
+					</div>
 					<div className='html-bar'>2</div>
-					<div className='css-icon' style={iconStyle[1]}></div>
+					<div className='css-icon' id='icon'>
+						<img
+							id='icon-img'
+							src={`${require('./images/css-icon.svg')}`}
+						/>
+					</div>
 					<div className='css-bar'>4</div>
-					<div className='java-icon' style={iconStyle[2]}></div>
+					<div className='java-icon' id='icon'>
+						<img
+							id='icon-img'
+							src={`${require('./images/java-icon.svg')}`}
+						/>
+					</div>
 					<div className='java-bar'>6</div>
-					<div className='sql-icon' style={iconStyle[3]}></div>
+					<div className='sql-icon' id='icon'>
+						<img
+							id='icon-img'
+							src={`${require('./images/sql-icon.svg')}`}
+						/>
+					</div>
 					<div className='sql-bar'>8</div>
-					<div className='javascript-icon' style={iconStyle[4]}></div>
+					<div className='javascript-icon' id='icon'>
+						<img
+							id='icon-img'
+							src={`${require('./images/javascript-icon.svg')}`}
+						/>
+					</div>
 					<div className='javascript-bar'>10</div>
-					<div className='react-icon' style={iconStyle[5]}></div>
+					<div className='react-icon' id='icon'>
+						<img
+							id='icon-img-react'
+							src={`${require('./images/react-icon.svg')}`}
+						/>
+					</div>
 					<div className='react-bar'>12</div>
 				</div>
 			</div>
 			<div id='project-1' className=''>
-				Project 1
+				Sorting Algorithm Visualizer
 			</div>
 			<div id='project-2' className=''>
-				{' '}
-				Project 2
+				Building API with SQL database
 			</div>
 			<div id='project-3' className=''>
-				Project 3
+				Snake Game with Machine Learning
 			</div>
-			<div id='project-viewer' className=''>
+			<AnimatedCard id='project-viewer' className=''>
 				Project Viewer
-			</div>
+			</AnimatedCard>
 			<div id='hobby-selector' className=''>
 				Hobby Selector
 			</div>
-			<div id='hobby-des' className=''>
+			<AnimatedCard id='hobby-des' className=''>
 				Hobby Description
-			</div>
+			</AnimatedCard>
 			<div id='contact-details' className=''>
-				Contact Details
+				<div className='contact-email'>1</div>
+				<div className='contact-linkedin'>2</div>
+				<div className='contact-instagram'>3</div>
+				<div className='contact-facebook'>4</div>
 			</div>
 		</div>
 	);
