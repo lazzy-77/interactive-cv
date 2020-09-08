@@ -1,12 +1,35 @@
 import React from 'react';
 import './App.css';
 import AnimatedCard from './components/AnimatedCard';
+import { ReactComponent as HtmlIcon } from './assets/images/html-5-icon.svg';
+import { ReactComponent as CssIcon } from './assets/images/css-icon.svg';
+import { ReactComponent as JavaIcon } from './assets/images/java-icon.svg';
+import { ReactComponent as SqlIcon } from './assets/images/sql-icon.svg';
+import { ReactComponent as JavascriptIcon } from './assets/images/javascript-icon.svg';
+import { ReactComponent as ReactIcon } from './assets/images/react-icon.svg';
+import { ReactComponent as LinkedInIcon } from './assets/images/linkedin-icon.svg';
+import { ReactComponent as ProfileIcon } from './assets/images/person-icon.svg';
+import { ReactComponent as CodeIcon } from './assets/images/code-icon.svg';
+import { ReactComponent as HobbyIcon } from './assets/images/guitar-icon.svg';
 
 function App() {
 	return (
 		<div className='container'>
 			<div id='nav' className=''>
-				Nav
+				<AnimatedCard className='nav-profile' scale={1.5}>
+					<ProfileIcon
+						title='Profile Icon'
+						className='nav-profile-icon'
+					/>
+				</AnimatedCard>
+
+				<AnimatedCard className='nav-code' scale={1.5}>
+					<CodeIcon title='Code Icon' className='nav-code-icon' />
+				</AnimatedCard>
+
+				<AnimatedCard className='nav-hobby' scale={1.5}>
+					<HobbyIcon title='Hobby Icon' className='nav-hobby-icon' />
+				</AnimatedCard>
 			</div>
 			<AnimatedCard id='user-info' className=''>
 				User Info
@@ -26,57 +49,67 @@ function App() {
 						Technologies Learned
 					</div>
 					<div className='html-icon' id='icon'>
-						<img
+						<HtmlIcon
+							title='HTML Icon'
+							className='html-icon'
 							id='icon-img'
-							src={`${require('./images/html-5-icon.svg')}`}
 						/>
 					</div>
 					<div className='html-bar'>2</div>
 					<div className='css-icon' id='icon'>
-						<img
+						<CssIcon
+							title='CSS Icon'
+							className='css-icon'
 							id='icon-img'
-							src={`${require('./images/css-icon.svg')}`}
 						/>
 					</div>
 					<div className='css-bar'>4</div>
 					<div className='java-icon' id='icon'>
-						<img
+						<JavaIcon
+							title=' Java Icon'
+							className='java-icon'
 							id='icon-img'
-							src={`${require('./images/java-icon.svg')}`}
 						/>
 					</div>
 					<div className='java-bar'>6</div>
 					<div className='sql-icon' id='icon'>
-						<img
+						<SqlIcon
+							title='SQL Icon'
+							className='sql-icon'
 							id='icon-img'
-							src={`${require('./images/sql-icon.svg')}`}
 						/>
 					</div>
 					<div className='sql-bar'>8</div>
 					<div className='javascript-icon' id='icon'>
-						<img
+						<JavascriptIcon
+							title='Javascript Icon'
+							className='javascript-icon'
 							id='icon-img'
-							src={`${require('./images/javascript-icon.svg')}`}
 						/>
 					</div>
 					<div className='javascript-bar'>10</div>
 					<div className='react-icon' id='icon'>
-						<img
+						<ReactIcon
+							title='React Icon'
+							className='react-icon'
 							id='icon-img-react'
-							src={`${require('./images/react-icon.svg')}`}
 						/>
 					</div>
 					<div className='react-bar'>12</div>
 				</div>
 			</div>
-			<div id='project-1' className=''>
-				Sorting Algorithm Visualizer
-			</div>
-			<div id='project-2' className=''>
-				Building API with SQL database
-			</div>
-			<div id='project-3' className=''>
-				Snake Game with Machine Learning
+			<div className='project-selector'>
+				<div className='project-selector-title'>Projects:</div>
+				<div id='' className='project-1'>
+					Sorting Algorithm Visualizer
+				</div>
+				<div id='' className='project-2'>
+					Building API with SQL database
+				</div>
+				<div id='' className='project-3'>
+					Snake Game with Machine Learning
+				</div>
+				<div className='project-tbd'>tbd</div>
 			</div>
 			<AnimatedCard id='project-viewer' className=''>
 				Project Viewer

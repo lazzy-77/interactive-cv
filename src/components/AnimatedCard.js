@@ -2,20 +2,34 @@ import React from 'react';
 import { animated, useSpring } from 'react-spring';
 // import './AnimatedCard.css';
 
-const calc = (x, y) => [
-	-(y - window.innerHeight / 3) / 30,
-	(x - window.innerWidth / 3) / 30,
-	1.05,
-];
-const trans = (x, y, s) =>
-	`perspective(100vw) rotateX(${x}deg) rotateY(${
-		y / 2
-	}deg) scale(${s})`;
+/**
+ * Component params or "props"
+ * scale [value between 1-10]
+ * rotationX
+ * rotationY
+ * mass
+ * @param {*} params
+ */
 
 const AnimatedCard = (params) => {
+	const multiplierScale =
+		params.scale === undefined ? 1 : params.scale;
+
+	const multiplierMass = params.mass === undefined ? 1 : params.mass;
+
+	const calc = (x, y) => [
+		-(y - window.innerHeight / 3) / 30,
+		(x - window.innerWidth / 3) / 30,
+		1.05 * multiplierScale,
+	];
+	const trans = (x, y, s) =>
+		`perspective(100vw) rotateX(${x}deg) rotateY(${
+			y / 2
+		}deg) scale(${s})`;
+
 	const [props, set] = useSpring(() => ({
 		xys: [0, 0, 1],
-		config: { mass: 5, tension: 350, friction: 90 },
+		config: { mass: 5 * multiplierMass, tension: 350, friction: 65 },
 	}));
 	return (
 		<animated.div

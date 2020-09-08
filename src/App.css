@@ -16,7 +16,7 @@ html {
 	grid-template-areas:
 		'nav pro-des tech-used tech-used tech-learned tech-learned'
 		'user-info pro-des tech-used tech-used tech-learned tech-learned'
-		'user-info project-1 project-2 project-3 tech-learned tech-learned'
+		'user-info project-selector project-selector project-selector tech-learned tech-learned'
 		'education project-viewer project-viewer project-viewer hobby-selector hobby-selector'
 		'education project-viewer project-viewer project-viewer hobby-des contact-details';
 	grid-gap: 0.5rem;
@@ -28,6 +28,52 @@ html {
 	background: #f76c6c;
 	grid-area: nav;
 	border-radius: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 'profile code hobby';
+}
+
+.nav-profile {
+	grid-area: profile;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-profile-icon {
+	margin: auto;
+	height: 70%;
+	width: 70%;
+}
+
+.nav-code {
+	grid-area: code;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-code-icon {
+	margin: auto;
+	height: 70%;
+	width: 70%;
+}
+
+.nav-hobby {
+	grid-area: hobby;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-hobby-icon {
+	margin: auto;
+	height: 70%;
+	width: 70%;
+}
+
+#nav-icon-img {
+	margin: auto;
+	height: 4rem;
+	width: 4rem;
 }
 
 #user-info {
@@ -92,12 +138,13 @@ html {
 		'html-icon html-bar css-icon css-bar'
 		'java-icon java-bar sql-icon sql-bar'
 		'javascript-icon javascript-bar react-icon react-bar';
-	grid-gap: 10px;
 }
 
 .tech-learned-title {
 	color: #fefefe;
 	grid-area: tech-learned-title;
+	font-family: TitleFont;
+	font-size: 2rem;
 }
 
 #icon {
@@ -107,18 +154,19 @@ html {
 
 #icon-img {
 	margin: auto;
-	height: 50%;
-	width: 50%;
+	height: 60%;
+	width: 60%;
 }
 
 #icon-img:hover {
 	z-index: 555555 !important;
+	box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 1);
 }
 
 #icon-img-react {
 	margin: auto;
-	height: 70%;
-	width: 70%;
+	height: 80%;
+	width: 80%;
 }
 
 .html-icon {
@@ -175,22 +223,55 @@ html {
 	background: #a8d0e6;
 }
 
-#project-1 {
+.project-selector {
 	background: #a8d0e6;
+	grid-area: project-selector;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 2fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 'project-selector-title project-1 project-2 project-3 project-tbd';
+}
+
+.project-selector-title {
+	color: #fefefe;
+	font-family: TitleFont;
+	font-size: 2rem;
+	margin: auto;
+	grid-area: project-selector-title;
+}
+
+.project-1 {
 	grid-area: project-1;
-	border-radius: 1rem;
+	color: #fefefe;
+	font-family: SubTitleFont;
+	font-size: 1rem;
+	margin: auto;
 }
 
-#project-2 {
-	background: #a8d0e6;
+.project-2 {
 	grid-area: project-2;
-	border-radius: 1rem;
+	color: #fefefe;
+	font-family: SubTitleFont;
+	font-size: 1rem;
+	margin: auto;
 }
 
-#project-3 {
-	background: #a8d0e6;
+.project-3 {
 	grid-area: project-3;
-	border-radius: 1rem;
+	color: #fefefe;
+	font-family: SubTitleFont;
+	font-size: 1rem;
+	margin: auto;
+}
+
+.project-tbd {
+	grid-area: project-tbd;
+	color: #fefefe;
+	font-family: SubTitleFont;
+	font-size: 1rem;
+	margin: auto;
 }
 
 #project-viewer {
@@ -203,7 +284,6 @@ html {
 #project-viewer:hover {
 	z-index: 555555 !important;
 	box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 1);
-	overflow: hidden;
 }
 
 #hobby-selector {
