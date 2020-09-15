@@ -1,5 +1,6 @@
 html {
 	overflow: hidden;
+	height: 100%;
 }
 
 .container {
@@ -16,7 +17,6 @@ html {
 		'profile education education'
 		'projects projects hobbies';
 	text-align: center;
-	overflow: 'hidden';
 }
 
 .profile-container {
@@ -214,6 +214,80 @@ html {
 }
 
 @media only screen and (max-width: 550px) {
-	.container {
+	html {
+		overflow: scroll;
+		height: 1000px;
+	}
+
+	.container {	
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+		display: grid;
+		height: 1000px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+		grid-template-areas: 
+		"profile"
+		"education"
+		"projects"
+		"hobbies"
+		;
+	}
+
+	.profile-container {
+		grid-area: profile;
+		background: #24305e;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3.4fr 1fr;
+		grid-template-areas:
+			'main-title'
+			'profile-container-content'
+			'profile-container-title';
+		overflow: hidden;
+		box-sizing: border-box;
+		padding: 15px;
+	}
+
+	.education-container {
+		grid-area: education;
+		background: #f76c6c;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3.4fr 1fr;
+		grid-template-areas:
+			'education-container-header'
+			'education-container-content'
+			'education-container-title';
+		padding: 15px;
+	}
+
+	.projects-container {
+		grid-area: projects;
+		background: #a8d0e6;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3.4fr 1fr;
+		grid-template-areas:
+			'projects-container-header'
+			'projects-container-content'
+			'projects-container-title';
+		padding: 15px;
+	}
+
+	.hobbies-container {
+		grid-area: hobbies;
+		background: #f8e9a1;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3.4fr 1fr;
+		grid-template-areas:
+			'hobbies-container-header'
+			'hobbies-container-content'
+			'hobbies-container-title';
+		padding: 15px;
 	}
 }

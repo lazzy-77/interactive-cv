@@ -23,7 +23,7 @@ function App() {
 			<div className='profile-container'>
 				<div className='main-title'>
 					<MenuIcon id='menu-icon' />
-					<div id='main-title'>INTERACTIVE CV</div>
+					<div id='main-title'></div>
 				</div>
 				<div className='profile-container-content'>
 					<img
