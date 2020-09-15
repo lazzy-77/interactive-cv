@@ -39,7 +39,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<AnimatedCard scale={1} className='education-container'>
+			<AnimatedCard scale={1} className='education-container' onClick={() => alert("pressed")} >
 				<div className='education-container-header'></div>
 				<div className='education-container-content'></div>
 				<div className='education-container-title'>

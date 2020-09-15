@@ -12,6 +12,8 @@ import { animated, useSpring } from 'react-spring';
  */
 
 const AnimatedCard = (params) => {
+	const pressed = params.onClick;
+
 	const multiplierScale =
 		params.scale === undefined ? 1 : params.scale;
 
@@ -40,6 +42,7 @@ const AnimatedCard = (params) => {
 			}
 			onMouseLeave={() => set({ xys: [0, 0, 1] })}
 			style={{ transform: props.xys.interpolate(trans) }}
+			onClick={pressed}
 		>
 			{params.children}
 		</animated.div>
