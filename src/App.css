@@ -216,7 +216,7 @@ html {
 @media only screen and (max-width: 550px) {
 	html {
 		overflow: scroll;
-		height: 1000px;
+		height: 100%;
 	}
 
 	.container {	
@@ -226,9 +226,9 @@ html {
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 		display: grid;
-		height: 1000px;
+		height: 250vh;
 		grid-template-columns: 1fr;
-		grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-template-areas: 
 		"profile"
 		"education"
@@ -247,12 +247,15 @@ html {
 			'main-title'
 			'profile-container-content'
 			'profile-container-title';
-		overflow: hidden;
-		box-sizing: border-box;
 		padding: 15px;
 	}
 
-	.education-container {
+	.profile-container:hover {
+		z-index: 55555555 !important;
+		cursor: pointer;
+	}
+
+	.education-container { 
 		grid-area: education;
 		background: #f76c6c;
 		display: grid;

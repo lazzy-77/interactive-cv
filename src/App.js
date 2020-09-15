@@ -28,7 +28,7 @@ function App() {
 				<div className='profile-container-content'>
 					<img
 						src={UserPic}
-						alt='Picture of Lance Nieva'
+						alt='Lance Nieva'
 						id='user-pic'
 					/>
 				</div>
