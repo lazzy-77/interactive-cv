@@ -1,0 +1,295 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'profile education education'
+    'projects projects hobbies';
+  text-align: center;
+}
+
+.profile-container {
+  grid-area: profile;
+  background: #24305e;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3.4fr 1fr;
+  grid-template-areas:
+    'main-title'
+    'profile-container-content'
+    'profile-container-title';
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.main-title {
+  font-family: TitleFont;
+  color: #fefefe;
+  grid-area: main-title;
+  font-size: 3rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 5.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'menu-icon main-title';
+}
+
+#menu-icon {
+  grid-area: menu-icon;
+  height: 3rem;
+  width: 3rem;
+  text-align: left;
+}
+
+#main-title {
+  grid-area: main-title;
+  text-align: left;
+}
+
+#user-pic {
+  width: 25%;
+}
+
+.profile-container-content {
+  grid-area: profile-container-content;
+}
+
+.profile-container-title {
+  grid-area: profile-container-title;
+  vertical-align: bottom;
+  text-align: right;
+}
+
+.profile-container-subtitle {
+  font-family: TitleFont;
+  color: #fefefe;
+  font-size: 2rem;
+}
+
+.profile-container-regfont {
+  font-family: RegFont;
+  color: #fefefe;
+  font-size: 1rem;
+}
+
+.education-container {
+  grid-area: education;
+  background: #f76c6c;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3.4fr 1fr;
+  grid-template-areas:
+    'education-container-header'
+    'education-container-content'
+    'education-container-title';
+  padding: 15px;
+}
+
+.education-container:hover {
+  z-index: 55555555 !important;
+  cursor: pointer;
+}
+
+.education-container-header {
+  grid-area: education-container-header;
+}
+
+.education-container-content {
+  grid-area: education-container-content;
+}
+
+.education-container-title {
+  grid-area: education-container-title;
+  text-align: left;
+}
+
+.education-container-subtitle {
+  font-family: TitleFont;
+  color: #fefefe;
+  font-size: 2rem;
+}
+
+.education-container-regfont {
+  font-family: RegFont;
+  color: #fefefe;
+  font-size: 1rem;
+}
+
+.projects-container {
+  grid-area: projects;
+  background: #a8d0e6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3.4fr 1fr;
+  grid-template-areas:
+    'projects-container-header'
+    'projects-container-content'
+    'projects-container-title';
+  padding: 15px;
+}
+
+.projects-container:hover {
+  z-index: 55555555 !important;
+  cursor: pointer;
+}
+
+.projects-container-header {
+  grid-area: projects-container-header;
+}
+
+.projects-container-content {
+  grid-area: projects-container-content;
+}
+
+.projects-container-title {
+  grid-area: projects-container-title;
+  text-align: right;
+}
+
+.projects-container-subtitle {
+  font-family: TitleFont;
+  color: #fefefe;
+  font-size: 2rem;
+}
+
+.projects-container-regfont {
+  font-family: RegFont;
+  color: #fefefe;
+  font-size: 1rem;
+}
+
+.hobbies-container {
+  grid-area: hobbies;
+  background: #f8e9a1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3.4fr 1fr;
+  grid-template-areas:
+    'hobbies-container-header'
+    'hobbies-container-content'
+    'hobbies-container-title';
+  padding: 15px;
+}
+
+.hobbies-container:hover {
+  z-index: 55555555 !important;
+  cursor: pointer;
+}
+
+.hobbies-container-header {
+  grid-area: hobbies-container-header;
+}
+
+.hobbies-container-content {
+  grid-area: hobbies-container-content;
+}
+
+.hobbies-container-title {
+  grid-area: hobbies-container-title;
+  text-align: left;
+}
+
+.hobbies-container-subtitle {
+  font-family: TitleFont;
+  color: #fefefe;
+  font-size: 2rem;
+}
+
+.hobbies-container-regfont {
+  font-family: RegFont;
+  color: #fefefe;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    overflow: scroll;
+    height: 100%;
+  }
+
+  .container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    display: grid;
+    height: 250vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'profile'
+      'education'
+      'projects'
+      'hobbies';
+  }
+
+  .profile-container {
+    grid-area: profile;
+    background: #24305e;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.4fr 1fr;
+    grid-template-areas:
+      'main-title'
+      'profile-container-content'
+      'profile-container-title';
+    padding: 15px;
+  }
+
+  .profile-container:hover {
+    z-index: 55555555 !important;
+    cursor: pointer;
+  }
+
+  .education-container {
+    grid-area: education;
+    background: #f76c6c;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.4fr 1fr;
+    grid-template-areas:
+      'education-container-header'
+      'education-container-content'
+      'education-container-title';
+    padding: 15px;
+  }
+
+  .projects-container {
+    grid-area: projects;
+    background: #a8d0e6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.4fr 1fr;
+    grid-template-areas:
+      'projects-container-header'
+      'projects-container-content'
+      'projects-container-title';
+    padding: 15px;
+  }
+
+  .hobbies-container {
+    grid-area: hobbies;
+    background: #f8e9a1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.4fr 1fr;
+    grid-template-areas:
+      'hobbies-container-header'
+      'hobbies-container-content'
+      'hobbies-container-title';
+    padding: 15px;
+  }
+}
