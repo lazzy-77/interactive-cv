@@ -19,6 +19,27 @@ html {
   text-align: center;
 }
 
+.menu {
+  z-index: 5555555555555;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  font-size: 64px;
+  color: #fefefe;
+}
+
+.menu-button {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  font-size: 64px;
+}
+
+ion-icon {
+  font-size: 64px;
+  color: #fefefe;
+}
+
 .profile-container {
   grid-area: profile;
   background: #24305e;
@@ -32,6 +53,11 @@ html {
   overflow: hidden;
   box-sizing: border-box;
   padding: 15px;
+}
+
+.profile-container:hover {
+  z-index: 5555555 !important;
+  cursor: pointer;
 }
 
 .main-title {

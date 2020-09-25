@@ -1,32 +1,32 @@
 @font-face {
-	font-family: 'TitleFont';
-	src: local('TitleFont'),
-		url(./assets/fonts/BebasNeue\ Bold.otf) format('opentype');
+  font-family: 'TitleFont';
+  src: local('TitleFont'),
+    url(./assets/fonts/BebasNeue\ Bold.otf) format('opentype');
 }
 
 @font-face {
-	font-family: 'SubTitleFont';
-	src: local('SubTitleFont'),
-		url(./assets/fonts/Montserrat-Regular.ttf) format('truetype');
+  font-family: 'SubTitleFont';
+  src: local('SubTitleFont'),
+    url(./assets/fonts/Montserrat-Regular.ttf) format('truetype');
 }
 
 @font-face {
-	font-family: 'RegFont';
-	src: local('RegFont'),
-		url(./assets/fonts/Montserrat-Light.ttf) format('truetype');
+  font-family: 'RegFont';
+  src: local('RegFont'),
+    url(./assets/fonts/Montserrat-Light.ttf) format('truetype');
 }
 
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-		'Helvetica Neue', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: #24305e;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fefefe;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

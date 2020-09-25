@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MainPage.css';
 import AnimatedCard from '../../components/AnimatedCard';
+import { MenuButton } from '../../components/MenuButton';
 // import { ReactComponent as HtmlIcon } from './assets/images/html-5-icon.svg';
 // import { ReactComponent as CssIcon } from './assets/images/css-icon.svg';
 // import { ReactComponent as JavaIcon } from './assets/images/java-icon.svg';
@@ -16,27 +17,42 @@ import AnimatedCard from '../../components/AnimatedCard';
 // import { ReactComponent as InstagramIcon } from './assets/images/instagram-icon.svg';
 import { ReactComponent as MenuIcon } from '../../assets/images/menu-icon.svg';
 import UserPic from '../../assets/images/user-pic.jpg';
+import { Link } from 'react-router-dom';
+import { useSpring } from 'react-spring';
 
 const MainPage = () => {
+  const [fullMenuVisible, setFullMenuVisible] = useState(false);
+
+  const fullMenuAnimation = useSpring({
+    transform: fullMenuVisible ? `translateY(0)` : `translateY(-100%)`,
+    opacity: fullMenuVisible ? 1 : 0,
+  });
+
   return (
     <div className='container'>
-      <div className='profile-container'>
+      {/* <div
+        className='menu'
+        onClick={() => setFullMenuVisible(!fullMenuVisible)}
+      >
+        <MenuButton style={fullMenuAnimation} />
+        <ion-icon name='menu' color='black'></ion-icon>
+      </div> */}
+      <AnimatedCard className='profile-container'>
         <div className='main-title'>
-          <MenuIcon id='menu-icon' />
           <div id='main-title'></div>
         </div>
         <div className='profile-container-content'>
-          <img src={UserPic} alt='Lance Nieva' id='user-pic' />
+          {/* <img src={UserPic} alt='Lance Nieva' id='user-pic' /> */}
         </div>
         <div className='profile-container-title'>
           <div className='profile-container-subtitle'>PROFILE</div>
           <div className='profile-container-regfont'>A little bit about me</div>
         </div>
-      </div>
+      </AnimatedCard>
       <AnimatedCard
         scale={1}
         className='education-container'
-        onClick={() => alert('pressed')}
+        // onClick={() => alert('pressed')}
       >
         <div className='education-container-header'></div>
         <div className='education-container-content'></div>
