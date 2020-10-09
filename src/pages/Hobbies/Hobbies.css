@@ -1,0 +1,20 @@
+.hobbies-page-container {
+  background: #24305e;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    'hobbies-page-header'
+    'hobbies-page-content'
+    'hobbies-page-footer';
+}
+.hobbies-page-header {
+  grid-area: hobbies-page-header;
+}
+.hobbies-page-content {
+  grid-area: hobbies-page-content;
+}
+.hobbies-page-footer {
+  grid-area: hobbies-page-footer;
+}

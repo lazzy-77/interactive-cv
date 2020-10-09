@@ -1,0 +1,20 @@
+.profile-page-container {
+  background: #24305e;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    'profile-page-header'
+    'profile-page-content'
+    'profile-page-footer';
+}
+.profile-page-header {
+  grid-area: profile-page-header;
+}
+.profile-page-content {
+  grid-area: profile-page-content;
+}
+.profile-page-footer {
+  grid-area: profile-page-footer;
+}

@@ -3,6 +3,15 @@ html {
   height: 100%;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,7 +66,6 @@ ion-icon {
 
 .profile-container:hover {
   z-index: 5555555 !important;
-  cursor: pointer;
 }
 
 .main-title {
@@ -125,7 +133,6 @@ ion-icon {
 
 .education-container:hover {
   z-index: 55555555 !important;
-  cursor: pointer;
 }
 
 .education-container-header {
@@ -168,7 +175,6 @@ ion-icon {
 
 .projects-container:hover {
   z-index: 55555555 !important;
-  cursor: pointer;
 }
 
 .projects-container-header {
@@ -211,7 +217,6 @@ ion-icon {
 
 .hobbies-container:hover {
   z-index: 55555555 !important;
-  cursor: pointer;
 }
 
 .hobbies-container-header {
@@ -277,7 +282,6 @@ ion-icon {
 
   .profile-container:hover {
     z-index: 55555555 !important;
-    cursor: pointer;
   }
 
   .education-container {

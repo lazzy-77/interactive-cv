@@ -1,0 +1,20 @@
+.projects-page-container {
+  background: #24305e;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    'projects-page-header'
+    'projects-page-content'
+    'projects-page-footer';
+}
+.projects-page-header {
+  grid-area: projects-page-header;
+}
+.projects-page-content {
+  grid-area: projects-page-content;
+}
+.projects-page-footer {
+  grid-area: projects-page-footer;
+}

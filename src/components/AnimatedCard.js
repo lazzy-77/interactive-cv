@@ -1,6 +1,5 @@
 import React from 'react';
 import { animated, useSpring, config } from 'react-spring';
-// import './AnimatedCard.css';
 
 /**
  * Component params or "props"
@@ -12,8 +11,6 @@ import { animated, useSpring, config } from 'react-spring';
  */
 
 const AnimatedCard = (params) => {
-  const pressed = params.onClick;
-
   const multiplierScale = params.scale === undefined ? 1 : params.scale;
 
   const multiplierMass = params.mass === undefined ? 1 : params.mass;
@@ -37,7 +34,6 @@ const AnimatedCard = (params) => {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}
-      onClick={pressed}
     >
       {params.children}
     </animated.div>

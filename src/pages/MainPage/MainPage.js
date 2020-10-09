@@ -1,86 +1,60 @@
 import React, { useState } from 'react';
 import './MainPage.css';
 import AnimatedCard from '../../components/AnimatedCard';
-import { MenuButton } from '../../components/MenuButton';
-// import { ReactComponent as HtmlIcon } from './assets/images/html-5-icon.svg';
-// import { ReactComponent as CssIcon } from './assets/images/css-icon.svg';
-// import { ReactComponent as JavaIcon } from './assets/images/java-icon.svg';
-// import { ReactComponent as SqlIcon } from './assets/images/sql-icon.svg';
-// import { ReactComponent as JavascriptIcon } from './assets/images/javascript-icon.svg';
-// import { ReactComponent as ReactIcon } from './assets/images/react-icon.svg';
-// import { ReactComponent as ProfileIcon } from './assets/images/person-icon.svg';
-// import { ReactComponent as CodeIcon } from './assets/images/code-icon.svg';
-// import { ReactComponent as HobbyIcon } from './assets/images/guitar-icon.svg';
-// import { ReactComponent as LinkedInIcon } from './assets/images/linkedin-icon.svg';
-// import { ReactComponent as EmailIcon } from './assets/images/email-icon.svg';
-// import { ReactComponent as FacebookIcon } from './assets/images/facebook-icon.svg';
-// import { ReactComponent as InstagramIcon } from './assets/images/instagram-icon.svg';
-import { ReactComponent as MenuIcon } from '../../assets/images/menu-icon.svg';
-import UserPic from '../../assets/images/user-pic.jpg';
 import { Link } from 'react-router-dom';
 import { useSpring } from 'react-spring';
 
 const MainPage = () => {
-  const [fullMenuVisible, setFullMenuVisible] = useState(false);
-
-  const fullMenuAnimation = useSpring({
-    transform: fullMenuVisible ? `translateY(0)` : `translateY(-100%)`,
-    opacity: fullMenuVisible ? 1 : 0,
-  });
-
   return (
     <div className='container'>
-      {/* <div
-        className='menu'
-        onClick={() => setFullMenuVisible(!fullMenuVisible)}
-      >
-        <MenuButton style={fullMenuAnimation} />
-        <ion-icon name='menu' color='black'></ion-icon>
-      </div> */}
       <AnimatedCard className='profile-container'>
         <div className='main-title'>
           <div id='main-title'></div>
         </div>
-        <div className='profile-container-content'>
-          {/* <img src={UserPic} alt='Lance Nieva' id='user-pic' /> */}
-        </div>
-        <div className='profile-container-title'>
-          <div className='profile-container-subtitle'>PROFILE</div>
-          <div className='profile-container-regfont'>A little bit about me</div>
-        </div>
+        <div className='profile-container-content'></div>
+        <Link to='/profile'>
+          <div className='profile-container-title'>
+            <div className='profile-container-subtitle'>PROFILE</div>
+            <div className='profile-container-regfont'>
+              A little bit about me
+            </div>
+          </div>
+        </Link>
       </AnimatedCard>
-      <AnimatedCard
-        scale={1}
-        className='education-container'
-        // onClick={() => alert('pressed')}
-      >
+      <AnimatedCard to='/education' scale={1} className='education-container'>
         <div className='education-container-header'></div>
         <div className='education-container-content'></div>
         <div className='education-container-title'>
-          <div className='education-container-subtitle'>EDUCATION</div>
-          <div className='education-container-regfont'>
-            Information on what I have studied
-          </div>
+          <Link to='/education'>
+            <div className='education-container-subtitle'>EDUCATION</div>
+            <div className='education-container-regfont'>
+              Information on what I have studied
+            </div>
+          </Link>
         </div>
       </AnimatedCard>
-      <AnimatedCard scale={1} className='projects-container'>
+      <AnimatedCard to='projects' scale={1} className='projects-container'>
         <div className='projects-container-header'></div>
         <div className='projects-container-content'></div>
         <div className='projects-container-title'>
-          <div className='projects-container-subtitle'>PROJECTS</div>
-          <div className='projects-container-regfont'>
-            Extra-curricular projects I made during down time
-          </div>
+          <Link to='/projects'>
+            <div className='projects-container-subtitle'>PROJECTS</div>
+            <div className='projects-container-regfont'>
+              Extra-curricular projects I made during down time
+            </div>
+          </Link>
         </div>
       </AnimatedCard>
-      <AnimatedCard scale={1} className='hobbies-container'>
+      <AnimatedCard to='/hobbies' scale={1} className='hobbies-container'>
         <div className='hobbies-container-header'></div>
         <div className='hobbies-container-content'></div>
         <div className='hobbies-container-title'>
-          <div className='hobbies-container-subtitle'>HOBBIES</div>
-          <div className='hobbies-container-regfont'>
-            Things I like to do in my spare time
-          </div>
+          <Link to='/hobbies'>
+            <div className='hobbies-container-subtitle'>HOBBIES</div>
+            <div className='hobbies-container-regfont'>
+              Things I like to do in my spare time
+            </div>
+          </Link>
         </div>
       </AnimatedCard>
     </div>
