@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
 import './MainPage.css';
 import AnimatedCard from '../../components/AnimatedCard';
+import NavMenu from '../../components/NavMenu';
 import { Link } from 'react-router-dom';
 import { useSpring } from 'react-spring';
+import { ReactComponent as EducationPic } from '../../assets/images/education-pic.svg';
+import { ReactComponent as ProjectsPic } from '../../assets/images/projects-pic.svg';
+import { ReactComponent as ProfilePic } from '../../assets/images/contact-card.svg';
 
 const MainPage = () => {
   return (
     <div className='container'>
+      <NavMenu />
+      <div className='header-title'>
+        <div className='header-title-content'>INTERACTIVE CV</div>
+      </div>
       <AnimatedCard className='profile-container'>
         <div className='main-title'>
           <div id='main-title'></div>
         </div>
-        <div className='profile-container-content'></div>
+        <div className='profile-container-content'>
+          <ProfilePic id='profile-pic' />
+        </div>
         <Link to='/profile'>
           <div className='profile-container-title'>
             <div className='profile-container-subtitle'>PROFILE</div>
@@ -23,7 +33,9 @@ const MainPage = () => {
       </AnimatedCard>
       <AnimatedCard to='/education' scale={1} className='education-container'>
         <div className='education-container-header'></div>
-        <div className='education-container-content'></div>
+        <div className='education-container-content'>
+          <EducationPic id='education-pic' />
+        </div>
         <div className='education-container-title'>
           <Link to='/education'>
             <div className='education-container-subtitle'>EDUCATION</div>
@@ -35,7 +47,9 @@ const MainPage = () => {
       </AnimatedCard>
       <AnimatedCard to='projects' scale={1} className='projects-container'>
         <div className='projects-container-header'></div>
-        <div className='projects-container-content'></div>
+        <div className='projects-container-content'>
+          <ProjectsPic id='projects-pic' />
+        </div>
         <div className='projects-container-title'>
           <Link to='/projects'>
             <div className='projects-container-subtitle'>PROJECTS</div>
@@ -45,7 +59,7 @@ const MainPage = () => {
           </Link>
         </div>
       </AnimatedCard>
-      <AnimatedCard to='/hobbies' scale={1} className='hobbies-container'>
+      {/* <AnimatedCard to='/hobbies' scale={1} className='hobbies-container'>
         <div className='hobbies-container-header'></div>
         <div className='hobbies-container-content'></div>
         <div className='hobbies-container-title'>
@@ -56,7 +70,7 @@ const MainPage = () => {
             </div>
           </Link>
         </div>
-      </AnimatedCard>
+      </AnimatedCard> */}
     </div>
   );
 };

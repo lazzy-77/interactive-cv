@@ -11,9 +11,12 @@
 		"prettier": "^2.1.2",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
+		"react-horizontal-scroll-container": "^1.0.1",
+		"react-horizontal-scrolling-menu": "^0.7.8",
 		"react-router": "^5.2.0",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "3.4.3",
+		"react-scroll-horizontal": "^1.6.6",
 		"react-spring": "^8.0.27"
 	},
 	"scripts": {

@@ -15,13 +15,19 @@ const AnimatedCard = (params) => {
 
   const multiplierMass = params.mass === undefined ? 1 : params.mass;
 
+  const multiplierX = params.x === undefined ? 1 : params.x;
+
+  const multiplierY = params.y === undefined ? 1 : params.y;
+
   const calc = (x, y) => [
     -(y - window.innerHeight / 3) / 30,
     (x - window.innerWidth / 3) / 30,
     1.05 * multiplierScale,
   ];
   const trans = (x, y, s) =>
-    `perspective(100vw) rotateX(${x}deg) rotateY(${y / 2}deg) scale(${s})`;
+    `perspective(100vw) rotateX(${x * multiplierX}deg) rotateY(${
+      (y / 2) * multiplierY
+    }deg) scale(${s})`;
 
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],

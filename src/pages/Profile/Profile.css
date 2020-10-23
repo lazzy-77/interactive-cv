@@ -1,4 +1,6 @@
 .profile-page-container {
+  color: #fefefe;
+  padding: 15px;
   background: #24305e;
   height: 100vh;
   display: grid;
@@ -11,10 +13,91 @@
 }
 .profile-page-header {
   grid-area: profile-page-header;
+  font-family: TitleFont;
+  font-size: 5rem;
+  text-decoration: underline #f76c6c;
 }
 .profile-page-content {
   grid-area: profile-page-content;
+  font-family: SubTitleFont;
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
 }
+
+.profile-card-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.profile-card {
+  display: inline-block;
+  height: 100%;
+  width: 27.5%;
+  padding: 1rem;
+  background: #202b55;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 1rem;
+  color: #fefefe;
+  font-family: SubTitleFont;
+}
+
+.about-header {
+}
+
+#user-pic {
+  height: 10rem;
+  width: 10rem;
+  float: right;
+}
+
+.about-header img {
+  height: 100px;
+  width: 100px;
+}
+
+.about-content {
+  font-size: 1.75rem;
+  font-family: RegFont;
+}
+
+.about-content-content {
+  text-align: right;
+}
+
+.location-header {
+  margin-bottom: 15px;
+}
+
+.location-content {
+  font-size: 1.75rem;
+  font-family: RegFont;
+}
+
+.profile-card ion-icon {
+  font-size: 1.75rem;
+}
+
+#profile-card-3 {
+}
+.profile-card:hover {
+  box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 1);
+}
+
 .profile-page-footer {
   grid-area: profile-page-footer;
+  height: 100%;
+}
+
+#footer-return {
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fefefe;
 }
