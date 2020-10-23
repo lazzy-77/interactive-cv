@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/interactive-cv/static/css/main.9e8d6814.chunk.css",
-    "main.js": "/interactive-cv/static/js/main.73d3b963.chunk.js",
-    "main.js.map": "/interactive-cv/static/js/main.73d3b963.chunk.js.map",
+    "main.css": "/interactive-cv/static/css/main.dc46ad75.chunk.css",
+    "main.js": "/interactive-cv/static/js/main.2957c95f.chunk.js",
+    "main.js.map": "/interactive-cv/static/js/main.2957c95f.chunk.js.map",
     "runtime-main.js": "/interactive-cv/static/js/runtime-main.3de8bcca.js",
     "runtime-main.js.map": "/interactive-cv/static/js/runtime-main.3de8bcca.js.map",
-    "static/js/2.da8dff4e.chunk.js": "/interactive-cv/static/js/2.da8dff4e.chunk.js",
-    "static/js/2.da8dff4e.chunk.js.map": "/interactive-cv/static/js/2.da8dff4e.chunk.js.map",
+    "static/js/2.d8030965.chunk.js": "/interactive-cv/static/js/2.d8030965.chunk.js",
+    "static/js/2.d8030965.chunk.js.map": "/interactive-cv/static/js/2.d8030965.chunk.js.map",
     "index.html": "/interactive-cv/index.html",
-    "precache-manifest.5158c53518ef8b8908b728c9a3b14de7.js": "/interactive-cv/precache-manifest.5158c53518ef8b8908b728c9a3b14de7.js",
+    "precache-manifest.8ec7ae2ffcacf8f5984d20d733435471.js": "/interactive-cv/precache-manifest.8ec7ae2ffcacf8f5984d20d733435471.js",
     "service-worker.js": "/interactive-cv/service-worker.js",
-    "static/css/main.9e8d6814.chunk.css.map": "/interactive-cv/static/css/main.9e8d6814.chunk.css.map",
-    "static/js/2.da8dff4e.chunk.js.LICENSE.txt": "/interactive-cv/static/js/2.da8dff4e.chunk.js.LICENSE.txt",
+    "static/css/main.dc46ad75.chunk.css.map": "/interactive-cv/static/css/main.dc46ad75.chunk.css.map",
+    "static/js/2.d8030965.chunk.js.LICENSE.txt": "/interactive-cv/static/js/2.d8030965.chunk.js.LICENSE.txt",
     "static/media/index.css": "/interactive-cv/static/media/Montserrat-Regular.ee653992.ttf",
-    "static/media/menu-icon.e681f0ec.svg": "/interactive-cv/static/media/menu-icon.e681f0ec.svg",
+    "static/media/contact-card.c55adee1.svg": "/interactive-cv/static/media/contact-card.c55adee1.svg",
+    "static/media/education-pic.3e73b20a.svg": "/interactive-cv/static/media/education-pic.3e73b20a.svg",
+    "static/media/projects-pic.5453ab3d.svg": "/interactive-cv/static/media/projects-pic.5453ab3d.svg",
     "static/media/user-pic.jpg": "/interactive-cv/static/media/user-pic.93c9874f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3de8bcca.js",
-    "static/js/2.da8dff4e.chunk.js",
-    "static/css/main.9e8d6814.chunk.css",
-    "static/js/main.73d3b963.chunk.js"
+    "static/js/2.d8030965.chunk.js",
+    "static/css/main.dc46ad75.chunk.css",
+    "static/js/main.2957c95f.chunk.js"
   ]
 }
