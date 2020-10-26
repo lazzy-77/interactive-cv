@@ -2,20 +2,34 @@ import React, { useState } from 'react';
 import './MainPage.css';
 import AnimatedCard from '../../components/AnimatedCard';
 import NavMenu from '../../components/NavMenu';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useSpring } from 'react-spring';
 import { ReactComponent as EducationPic } from '../../assets/images/education-pic.svg';
 import { ReactComponent as ProjectsPic } from '../../assets/images/projects-pic.svg';
 import { ReactComponent as ProfilePic } from '../../assets/images/contact-card.svg';
 
 const MainPage = () => {
+  const history = useHistory();
+
+  const goToProfile = () => {
+    history.push('/profile');
+  };
+
+  const goToEducation = () => {
+    history.push('/education');
+  };
+
+  const goToProjects = () => {
+    history.push('/projects');
+  };
+
   return (
     <div className='container'>
       <NavMenu />
       <div className='header-title'>
         <div className='header-title-content'>INTERACTIVE CV</div>
       </div>
-      <AnimatedCard className='profile-container'>
+      <AnimatedCard className='profile-container' onClick={goToProfile}>
         <div className='main-title'>
           <div id='main-title'></div>
         </div>
@@ -31,7 +45,12 @@ const MainPage = () => {
           </div>
         </Link>
       </AnimatedCard>
-      <AnimatedCard to='/education' scale={1} className='education-container'>
+      <AnimatedCard
+        to='/education'
+        scale={1}
+        className='education-container'
+        onClick={goToEducation}
+      >
         <div className='education-container-header'></div>
         <div className='education-container-content'>
           <EducationPic id='education-pic' />
@@ -45,7 +64,12 @@ const MainPage = () => {
           </Link>
         </div>
       </AnimatedCard>
-      <AnimatedCard to='projects' scale={1} className='projects-container'>
+      <AnimatedCard
+        to='projects'
+        scale={1}
+        className='projects-container'
+        onClick={goToProjects}
+      >
         <div className='projects-container-header'></div>
         <div className='projects-container-content'>
           <ProjectsPic id='projects-pic' />

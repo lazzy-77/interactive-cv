@@ -19,6 +19,8 @@ const AnimatedCard = (params) => {
 
   const multiplierY = params.y === undefined ? 1 : params.y;
 
+  const clicked = params.onClick;
+
   const calc = (x, y) => [
     -(y - window.innerHeight / 3) / 30,
     (x - window.innerWidth / 3) / 30,
@@ -40,6 +42,7 @@ const AnimatedCard = (params) => {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}
+      onClick={clicked}
     >
       {params.children}
     </animated.div>

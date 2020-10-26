@@ -10,13 +10,10 @@ const Education = (props) => {
       <div className='education-page-content'>
         <div className='education-card-container'>
           <AnimatedCard className='education-card' id='education-card-1'>
-            About
+            University
           </AnimatedCard>
           <AnimatedCard className='education-card' id='education-card-2'>
-            Location
-          </AnimatedCard>
-          <AnimatedCard className='education-card' id='education-card-3'>
-            Skills
+            High School
           </AnimatedCard>
         </div>
       </div>

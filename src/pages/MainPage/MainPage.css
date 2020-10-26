@@ -58,6 +58,7 @@ a {
 
 .profile-container:hover {
   z-index: 5555555 !important;
+  cursor: pointer;
 }
 
 .main-title {
@@ -132,6 +133,7 @@ a {
 
 .education-container:hover {
   z-index: 55555555 !important;
+  cursor: pointer;
 }
 
 #education-pic {
@@ -182,6 +184,7 @@ a {
 
 .projects-container:hover {
   z-index: 55555555 !important;
+  cursor: pointer;
 }
 
 #projects-pic {

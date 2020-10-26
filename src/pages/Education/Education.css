@@ -16,6 +16,7 @@
   font-family: TitleFont;
   font-size: 5rem;
   text-decoration: underline #24305e;
+  text-align: center;
 }
 .education-page-content {
   grid-area: education-page-content;
@@ -28,12 +29,12 @@
   height: 100%;
   width: 100%;
   margin: auto;
+  text-align: center;
 }
 
 .education-card {
   display: inline-block;
   height: 100%;
-  width: 25%;
   padding: 1rem;
   background: #f87b7b;
   overflow: hidden;
@@ -44,9 +45,11 @@
 }
 
 #education-card-1 {
+  width: 50%;
 }
 
 #education-card-2 {
+  width: 40%;
 }
 
 #education-card-3 {

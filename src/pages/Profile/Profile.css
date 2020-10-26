@@ -16,6 +16,7 @@
   font-family: TitleFont;
   font-size: 5rem;
   text-decoration: underline #f76c6c;
+  margin: auto;
 }
 .profile-page-content {
   grid-area: profile-page-content;
@@ -23,17 +24,16 @@
   height: 100%;
   width: 100%;
   font-size: 3rem;
+  text-align: center;
 }
 
 .profile-card-container {
-  height: 100%;
   width: 100%;
   margin: auto;
 }
 
 .profile-card {
   display: inline-block;
-  height: 100%;
   width: 27.5%;
   padding: 1rem;
   background: #202b55;
@@ -42,6 +42,11 @@
   margin: 1rem;
   color: #fefefe;
   font-family: SubTitleFont;
+  text-align: left;
+}
+
+.profile-card-paragraph {
+  font-size: 1.25rem;
 }
 
 .about-header {
@@ -59,7 +64,7 @@
 }
 
 .about-content {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-family: RegFont;
 }
 
@@ -80,8 +85,57 @@
   font-size: 1.75rem;
 }
 
-#profile-card-3 {
+#profile-card-1 {
+  height: 30rem;
 }
+
+#profile-card-2 {
+  height: 30rem;
+}
+
+#profile-card-3 {
+  height: 30rem;
+}
+
+.skills-header {
+}
+
+.skills-content {
+  height: 100%;
+  font-size: 1.25rem;
+  font-family: RegFont;
+  height: 100%;
+}
+
+.skills-content-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'skills-javascript skills-java skills-cpp'
+    'skills-python skills-html skills-css';
+  grid-gap: 2rem;
+}
+
+.skills-1 {
+  grid-area: skills-javascript;
+}
+.skills-2 {
+  grid-area: skills-java;
+}
+.skills-3 {
+  grid-area: skills-cpp;
+}
+.skills-4 {
+  grid-area: skills-python;
+}
+.skills-5 {
+  grid-area: skills-html;
+}
+.skills-6 {
+  grid-area: skills-css;
+}
+
 .profile-card:hover {
   box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 1);
 }
@@ -89,12 +143,18 @@
 .profile-page-footer {
   grid-area: profile-page-footer;
   height: 100%;
+  overflow: hidden;
 }
 
 #footer-return {
   display: flex;
   position: absolute;
   bottom: 15px;
+}
+
+#profile-flag {
+  height: 7.5rem;
+  width: 7.5rem;
 }
 
 a {
