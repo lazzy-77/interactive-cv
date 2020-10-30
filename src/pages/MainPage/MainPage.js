@@ -76,7 +76,9 @@ const MainPage = () => {
         </div>
         <div className='projects-container-title'>
           <Link to='/projects'>
-            <div className='projects-container-subtitle'>PROJECTS</div>
+            <div className='projects-container-subtitle'>
+              PROJECTS {'&'} HOBBIES
+            </div>
             <div className='projects-container-regfont'>
               Extra-curricular projects I made during down time
             </div>

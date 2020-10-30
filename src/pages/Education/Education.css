@@ -28,16 +28,16 @@
 .education-card-container {
   height: 100%;
   width: 100%;
-  margin: auto;
+
   text-align: center;
 }
 
 .education-card {
   display: inline-block;
-  height: 100%;
+
   padding: 1rem;
   background: #f87b7b;
-  overflow: hidden;
+  overflow: auto;
   border-radius: 2rem;
   margin: 1rem;
   color: #fefefe;
@@ -48,24 +48,89 @@
   width: 50%;
 }
 
+.education-card-content-university {
+  height: 90%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'university-logo university-content';
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.education-card-content-university-logo {
+  text-align: center;
+  grid-area: university-logo;
+}
+
+.education-card-content-university-content {
+  grid-area: university-content;
+}
+
+.education-card-content-university-content-grades {
+  height: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'year-1-grades year-2-grades';
+  font-size: 1rem;
+}
+
+.year-1-grades {
+  grid-area: year-1-grades;
+}
+
+.year-2-grades {
+  grid-area: year-2-grades;
+}
+
 #education-card-2 {
   width: 40%;
 }
 
+.education-card-content-highschool {
+  height: 90%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'highschool-logo highschool-content';
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+.education-card-content-highschool-logo {
+  grid-area: highschool-logo;
+}
+
+.education-card-content-highschool-content {
+  grid-area: highschool-content;
+  font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'education-a-level'
+    'education-gcse';
+}
+
 #education-card-3 {
 }
+
 .education-card:hover {
   box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 1);
 }
 
 .education-page-footer {
+  height: 100%;
   grid-area: education-page-footer;
 }
 
 #footer-return {
   display: flex;
   position: absolute;
-  bottom: 15px;
+  top: 15px;
 }
 
 a {
