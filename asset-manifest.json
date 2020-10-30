@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/interactive-cv/static/css/main.594cb845.chunk.css",
-    "main.js": "/interactive-cv/static/js/main.e5419c60.chunk.js",
-    "main.js.map": "/interactive-cv/static/js/main.e5419c60.chunk.js.map",
+    "main.css": "/interactive-cv/static/css/main.0aac9e40.chunk.css",
+    "main.js": "/interactive-cv/static/js/main.de821ae7.chunk.js",
+    "main.js.map": "/interactive-cv/static/js/main.de821ae7.chunk.js.map",
     "runtime-main.js": "/interactive-cv/static/js/runtime-main.3de8bcca.js",
     "runtime-main.js.map": "/interactive-cv/static/js/runtime-main.3de8bcca.js.map",
-    "static/js/2.96e86c0e.chunk.js": "/interactive-cv/static/js/2.96e86c0e.chunk.js",
-    "static/js/2.96e86c0e.chunk.js.map": "/interactive-cv/static/js/2.96e86c0e.chunk.js.map",
+    "static/js/2.d5dff9a3.chunk.js": "/interactive-cv/static/js/2.d5dff9a3.chunk.js",
+    "static/js/2.d5dff9a3.chunk.js.map": "/interactive-cv/static/js/2.d5dff9a3.chunk.js.map",
     "index.html": "/interactive-cv/index.html",
-    "precache-manifest.d93750d3061774aa527966da07f3d87d.js": "/interactive-cv/precache-manifest.d93750d3061774aa527966da07f3d87d.js",
+    "precache-manifest.3e6f940fbd20a1dc40b4452dbbb8b7d9.js": "/interactive-cv/precache-manifest.3e6f940fbd20a1dc40b4452dbbb8b7d9.js",
     "service-worker.js": "/interactive-cv/service-worker.js",
-    "static/css/main.594cb845.chunk.css.map": "/interactive-cv/static/css/main.594cb845.chunk.css.map",
-    "static/js/2.96e86c0e.chunk.js.LICENSE.txt": "/interactive-cv/static/js/2.96e86c0e.chunk.js.LICENSE.txt",
+    "static/css/main.0aac9e40.chunk.css.map": "/interactive-cv/static/css/main.0aac9e40.chunk.css.map",
+    "static/js/2.d5dff9a3.chunk.js.LICENSE.txt": "/interactive-cv/static/js/2.d5dff9a3.chunk.js.LICENSE.txt",
     "static/media/index.css": "/interactive-cv/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/ags.png": "/interactive-cv/static/media/ags.d339532c.png",
     "static/media/contact-card.c55adee1.svg": "/interactive-cv/static/media/contact-card.c55adee1.svg",
     "static/media/cpp-icon.8cc47c68.svg": "/interactive-cv/static/media/cpp-icon.8cc47c68.svg",
     "static/media/education-pic.3e73b20a.svg": "/interactive-cv/static/media/education-pic.3e73b20a.svg",
@@ -23,14 +24,15 @@
     "static/media/projects-pic.5453ab3d.svg": "/interactive-cv/static/media/projects-pic.5453ab3d.svg",
     "static/media/python-icon.ffc01dcc.svg": "/interactive-cv/static/media/python-icon.ffc01dcc.svg",
     "static/media/sql-icon.5c7ec94d.svg": "/interactive-cv/static/media/sql-icon.5c7ec94d.svg",
+    "static/media/uni-icon.aa2f7682.svg": "/interactive-cv/static/media/uni-icon.aa2f7682.svg",
     "static/media/united-kingdom.dbb2d233.svg": "/interactive-cv/static/media/united-kingdom.dbb2d233.svg",
     "static/media/united-states.24610718.svg": "/interactive-cv/static/media/united-states.24610718.svg",
     "static/media/user-pic.jpg": "/interactive-cv/static/media/user-pic.93c9874f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3de8bcca.js",
-    "static/js/2.96e86c0e.chunk.js",
-    "static/css/main.594cb845.chunk.css",
-    "static/js/main.e5419c60.chunk.js"
+    "static/js/2.d5dff9a3.chunk.js",
+    "static/css/main.0aac9e40.chunk.css",
+    "static/js/main.de821ae7.chunk.js"
   ]
 }
