@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "176256722ea0d00441cfbad58a41a8f1",
+    "revision": "eb81d8b93ea6bffd6948d728f62436ac",
     "url": "/interactive-cv/index.html"
   },
   {
-    "revision": "30cac9001506fce611a2",
-    "url": "/interactive-cv/static/css/main.0aac9e40.chunk.css"
+    "revision": "c3ea4935d50658a93841",
+    "url": "/interactive-cv/static/css/main.49722114.chunk.css"
   },
   {
     "revision": "c49b0e7597e6fd44e933",
@@ -16,12 +16,44 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interactive-cv/static/js/2.d5dff9a3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "30cac9001506fce611a2",
-    "url": "/interactive-cv/static/js/main.de821ae7.chunk.js"
+    "revision": "c3ea4935d50658a93841",
+    "url": "/interactive-cv/static/js/main.55adae22.chunk.js"
   },
   {
     "revision": "bf923ce1f7b1fe245572",
     "url": "/interactive-cv/static/js/runtime-main.3de8bcca.js"
+  },
+  {
+    "revision": "333f6f537805955e247c0c4aba5ecef5",
+    "url": "/interactive-cv/static/media/003-dumbbell.333f6f53.svg"
+  },
+  {
+    "revision": "5c2c16ffca0ad5f2d055227827e8f54c",
+    "url": "/interactive-cv/static/media/005-loudspeakers.5c2c16ff.svg"
+  },
+  {
+    "revision": "4e379a95d987d61b2ebb93de62a89c0c",
+    "url": "/interactive-cv/static/media/006-guitar.4e379a95.svg"
+  },
+  {
+    "revision": "cb641caa40fdc79b9156775bc6b0767a",
+    "url": "/interactive-cv/static/media/014-money.cb641caa.svg"
+  },
+  {
+    "revision": "525b28341ea2fc1c901e8e96a03257eb",
+    "url": "/interactive-cv/static/media/015-video player.525b2834.svg"
+  },
+  {
+    "revision": "6327632733d515831b8eb3ca794a5a29",
+    "url": "/interactive-cv/static/media/024-football.63276327.svg"
+  },
+  {
+    "revision": "f137a869cf6a6a6738823e72aaf7c875",
+    "url": "/interactive-cv/static/media/033-internet.f137a869.svg"
+  },
+  {
+    "revision": "348034675b76dd83698c0eb3e16ea335",
+    "url": "/interactive-cv/static/media/037-video console.34803467.svg"
   },
   {
     "revision": "524d720f3f670bd38785447ca9c4b395",
@@ -40,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interactive-cv/static/media/ags.d339532c.png"
   },
   {
+    "revision": "d6901e596c1a5f15dda5a29a20465a44",
+    "url": "/interactive-cv/static/media/chest.d6901e59.svg"
+  },
+  {
     "revision": "c55adee1db84dddfad3b977621b12ca5",
     "url": "/interactive-cv/static/media/contact-card.c55adee1.svg"
   },
@@ -54,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b60ab0009bc55c6bdcb27fcd1c7c2070",
     "url": "/interactive-cv/static/media/html-css-icon.b60ab000.svg"
+  },
+  {
+    "revision": "b37b4f2370ecfe6141cb02591ed4ee11",
+    "url": "/interactive-cv/static/media/interactive-cv.b37b4f23.svg"
   },
   {
     "revision": "be2f99240d665dd6d55a2cfa97c1b191",

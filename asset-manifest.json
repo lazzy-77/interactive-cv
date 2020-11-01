@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/interactive-cv/static/css/main.0aac9e40.chunk.css",
-    "main.js": "/interactive-cv/static/js/main.de821ae7.chunk.js",
-    "main.js.map": "/interactive-cv/static/js/main.de821ae7.chunk.js.map",
+    "main.css": "/interactive-cv/static/css/main.49722114.chunk.css",
+    "main.js": "/interactive-cv/static/js/main.55adae22.chunk.js",
+    "main.js.map": "/interactive-cv/static/js/main.55adae22.chunk.js.map",
     "runtime-main.js": "/interactive-cv/static/js/runtime-main.3de8bcca.js",
     "runtime-main.js.map": "/interactive-cv/static/js/runtime-main.3de8bcca.js.map",
     "static/js/2.d5dff9a3.chunk.js": "/interactive-cv/static/js/2.d5dff9a3.chunk.js",
     "static/js/2.d5dff9a3.chunk.js.map": "/interactive-cv/static/js/2.d5dff9a3.chunk.js.map",
     "index.html": "/interactive-cv/index.html",
-    "precache-manifest.3e6f940fbd20a1dc40b4452dbbb8b7d9.js": "/interactive-cv/precache-manifest.3e6f940fbd20a1dc40b4452dbbb8b7d9.js",
+    "precache-manifest.8ef054d5bf7efebabfb2f5a3883d5d72.js": "/interactive-cv/precache-manifest.8ef054d5bf7efebabfb2f5a3883d5d72.js",
     "service-worker.js": "/interactive-cv/service-worker.js",
-    "static/css/main.0aac9e40.chunk.css.map": "/interactive-cv/static/css/main.0aac9e40.chunk.css.map",
+    "static/css/main.49722114.chunk.css.map": "/interactive-cv/static/css/main.49722114.chunk.css.map",
     "static/js/2.d5dff9a3.chunk.js.LICENSE.txt": "/interactive-cv/static/js/2.d5dff9a3.chunk.js.LICENSE.txt",
+    "static/media/003-dumbbell.333f6f53.svg": "/interactive-cv/static/media/003-dumbbell.333f6f53.svg",
+    "static/media/005-loudspeakers.5c2c16ff.svg": "/interactive-cv/static/media/005-loudspeakers.5c2c16ff.svg",
+    "static/media/006-guitar.4e379a95.svg": "/interactive-cv/static/media/006-guitar.4e379a95.svg",
+    "static/media/014-money.cb641caa.svg": "/interactive-cv/static/media/014-money.cb641caa.svg",
+    "static/media/015-video player.525b2834.svg": "/interactive-cv/static/media/015-video player.525b2834.svg",
+    "static/media/024-football.63276327.svg": "/interactive-cv/static/media/024-football.63276327.svg",
+    "static/media/033-internet.f137a869.svg": "/interactive-cv/static/media/033-internet.f137a869.svg",
+    "static/media/037-video console.34803467.svg": "/interactive-cv/static/media/037-video console.34803467.svg",
     "static/media/index.css": "/interactive-cv/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/ags.png": "/interactive-cv/static/media/ags.d339532c.png",
+    "static/media/chest.d6901e59.svg": "/interactive-cv/static/media/chest.d6901e59.svg",
     "static/media/contact-card.c55adee1.svg": "/interactive-cv/static/media/contact-card.c55adee1.svg",
     "static/media/cpp-icon.8cc47c68.svg": "/interactive-cv/static/media/cpp-icon.8cc47c68.svg",
     "static/media/education-pic.3e73b20a.svg": "/interactive-cv/static/media/education-pic.3e73b20a.svg",
     "static/media/html-css-icon.b60ab000.svg": "/interactive-cv/static/media/html-css-icon.b60ab000.svg",
+    "static/media/interactive-cv.b37b4f23.svg": "/interactive-cv/static/media/interactive-cv.b37b4f23.svg",
     "static/media/java-icon.be2f9924.svg": "/interactive-cv/static/media/java-icon.be2f9924.svg",
     "static/media/javascript-icon.a30e2247.svg": "/interactive-cv/static/media/javascript-icon.a30e2247.svg",
     "static/media/menu-button.093a60aa.svg": "/interactive-cv/static/media/menu-button.093a60aa.svg",
@@ -32,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.3de8bcca.js",
     "static/js/2.d5dff9a3.chunk.js",
-    "static/css/main.0aac9e40.chunk.css",
-    "static/js/main.de821ae7.chunk.js"
+    "static/css/main.49722114.chunk.css",
+    "static/js/main.55adae22.chunk.js"
   ]
 }
