@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import AnimatedCard from '../../components/AnimatedCard';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import { ReactComponent as Gaming } from '../../assets/images/hobbies/037-video console.svg';
 import { ReactComponent as Workout } from '../../assets/images/hobbies/003-dumbbell.svg';
@@ -15,6 +15,12 @@ import { ReactComponent as Loot } from '../../assets/images/projects/chest.svg';
 import { ReactComponent as CV } from '../../assets/images/projects/interactive-cv.svg';
 
 const Projects = (props) => {
+  const lootLink = 'https://lazzy-77.github.io/loot';
+
+  const goToLoot = () => {
+    window.open(lootLink, '_blank');
+  };
+
   return (
     <div className='projects-page-container'>
       <div className='projects-page-header'>Projects {'&'} Hobbies</div>
@@ -28,6 +34,7 @@ const Projects = (props) => {
                   <AnimatedCard
                     id='projects-card-projects-content-item-icon'
                     className='projects-card-items'
+                    onClick={goToLoot}
                   >
                     <Loot id='projects-item-icon' />
                   </AnimatedCard>

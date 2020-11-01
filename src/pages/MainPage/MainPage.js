@@ -65,7 +65,7 @@ const MainPage = () => {
         </div>
       </AnimatedCard>
       <AnimatedCard
-        to='projects'
+        to='/projects'
         scale={1}
         className='projects-container'
         onClick={goToProjects}

@@ -91,6 +91,10 @@
   align-items: center;
 }
 
+#projects-card-projects-content-item-icon:hover {
+  cursor: pointer;
+}
+
 #projects-item-icon {
   height: 7.5rem;
   width: 7.5rem;
