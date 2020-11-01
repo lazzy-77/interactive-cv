@@ -14,6 +14,7 @@
 .projects-page-header {
   grid-area: projects-page-header;
   font-family: TitleFont;
+  text-align: center;
   font-size: 5rem;
   text-decoration: underline #f76c6c;
 }
@@ -28,12 +29,12 @@
   height: 100%;
   width: 100%;
   margin: auto;
+  text-align: center;
 }
 
 .projects-card {
   display: inline-block;
-  height: 100%;
-  width: 25%;
+  height: 90%;
   padding: 1rem;
   background: #b9d9eb;
   overflow: hidden;
@@ -44,14 +45,108 @@
 }
 
 #projects-card-1 {
+  width: 60%;
+}
+
+.projects-card-projects {
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas:
+    'projects-header'
+    'projects-content';
+  overflow: hidden;
+}
+
+.projects-card-projects-header {
+  grid-area: projects-header;
+}
+
+.projects-card-projects-content {
+  text-align: center;
+  padding: 1rem;
+  grid-area: projects-content;
+  height: 95%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#projects-card-projects-content-item {
+  /* background: #d4e8f3; */
+  height: 100%;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+}
+
+#projects-card-projects-content-item-icon {
+  height: 90%;
+  border-radius: 1rem;
+  background: #d4e8f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects-item-icon {
+  height: 7.5rem;
+  width: 7.5rem;
 }
 
 #projects-card-2 {
+  width: 30%;
+}
+
+.projects-card-hobbies {
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas:
+    'hobbies-header'
+    'hobbies-content';
+  overflow: hidden;
+}
+
+.projects-card-hobbies-header {
+  grid-area: hobbies-header;
+  height: 100%;
+}
+
+.projects-card-hobbies-content {
+  text-align: center;
+  padding: 1rem;
+  grid-area: hobbies-content;
+  height: 95%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#projects-card-hobbies-content-item {
+  background: #d4e8f3;
+  height: 100%;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hobby-item {
+  margin: auto;
+  height: 5rem;
+  width: 5rem;
 }
 
 #projects-card-3 {
 }
-.projects-card:hover {
+.projects-card-items:hover {
   box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 1);
 }
 
@@ -63,6 +158,7 @@
   display: flex;
   position: absolute;
   bottom: 15px;
+  height: 1rem;
 }
 
 a {
